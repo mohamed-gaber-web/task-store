@@ -1,0 +1,16 @@
+<h1> Product Details </h1>
+
+<div class="container">
+    <div class="row" *ngIf="courseDetails">
+        <div class="col-md-3">
+            <img [src]="courseDetails.image" alt="courseDetails.title" />
+        </div>
+
+        <div class="col-md-6">
+            <h3> {{ courseDetails.title }} </h3>
+            <p> {{ courseDetails.description }} </p>
+            <h4> {{ courseDetails.price }} $ </h4>
+            <h4>  <b> Category :  </b> {{ courseDetails.category }} </h4>
+        </div>
+    </div>
+</div>
